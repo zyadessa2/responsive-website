@@ -1,0 +1,412 @@
+body{
+    background-color: #F5F5F5;
+}
+nav
+{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav-item a 
+{
+    position:relative;
+}
+.nav-item a::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0% ;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.8s;
+}
+.nav-item a:hover:before
+{
+    width: 80%;
+}
+header
+{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+header h1
+ {
+    font-size: 72px;
+    font-weight: 600;
+}
+header p::after
+{
+    content: "|";
+    animation-name: blabla;
+    animation-duration:15s;
+    animation-iteration-count: infinite;
+}
+ .over{
+    background-color: #000000b6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+@keyframes blabla
+{
+    0%{content:"D|";}
+    1.4%{content:"De|";}
+    2.8%{content:"Des|";}
+    4.22%{content:"Desi|";}
+    5.63%{content:"Desig|";}
+    8.45%{content:"Design|";}
+    9.89%{content:"Designe|";}
+    11.2%{content:"Designer|";}
+    12.6%{content:"Designer|";}
+    14.0%{content:"Designe|";}
+    15.49%{content:"Design|";}
+    16.9%{content:"Desig|";}
+    18.3%{content:"Desi|";}
+    19.7%{content:"Des|";}
+    21.1%{content:"De|";}
+    22.5%{content:"Dev|";}
+    23.9%{content:"Deve|";}
+    25.3%{content:"Devel|";}
+    26.7%{content:"Develo|";}
+    28.16%{content:"Develop|";}
+    29.5%{content:"Develope|";}
+    30.9%{content:"Developer|";}
+    33.39%{content:"Develope|";}
+    33.8%{content:"Develop|";}
+    35.2%{content:"Develo|";}
+    36.6%{content:"Devel|";}
+    38%{content:"Deve|";}
+    39.2%{content:"De|";}
+    40.5%{content:"D|";}
+    40.9%{content:"|";}
+    41.2%{content:"F|";}
+    42.5%{content:"Fr|";}
+    43.2%{content:"Fre|";}
+    44.5%{content:"Free|";}
+    45.7%{content:"Freel|";}
+    47.1%{content:"Freela|";}
+    48.5%{content:"Freelan|";}
+    49.9%{content:"Freelanc|";}
+    51.3%{content:"Freelance|";}
+    53.7%{content:"Freelancer|";}
+    54.1%{content:"Freelance|";}
+    55.5%{content:"Freelanc|";}
+    56.9%{content:"Freelan|";}
+    58.3%{content:"Freela|";}
+    59.7%{content:"Freel|";}
+    61.1%{content:"Fre|";}
+    62.5%{content:"Fr|";}
+    63.9%{content:"F|";}
+    65.1%{content:"|";}
+    66.5%{content:"P|";}
+    67.9%{content:"Ph|";}
+    69.1%{content:"Pho|";}
+    70.5%{content:"Phot|";}
+    71.9%{content:"Photo|";}
+    73.1%{content:"Photog|";}
+    74.5%{content:"Photogr|";}
+    75.9%{content:"Photogra|";}
+    77.1%{content:"Photograp|";}
+    78.5%{content:"Photograph|";}
+    79.3%{content:"Photographe|";}
+    82.1%{content:"Photographer|";}
+    82.5%{content:"Photographe|";}
+    83.9%{content:"Photograph|";}
+    85.1%{content:"Photograp|";}
+    86.5%{content:"Photogra|";}
+    87.9%{content:"Photogr|";}
+    89.1%{content:"Photog|";}
+    90.5%{content:"Photo|";}
+    91.9%{content:"Phot|";}
+    93%{content:"Pho|";}
+    95%{content:"Ph|";}
+    98%{content:"P|";}
+    100%{content:"|";}
+}
+
+section{
+    background-color: #F5F5F5;
+}
+.about{
+    background-color: #F5F5F5;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about .info p{
+    font-size: 16px;
+}
+.about .info span{
+    font-size: 17px;
+    font-weight: 700;
+}
+.about-me h4{
+    font-size: 32px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.about-me h4::after{
+    content: "";
+    background-color: rgb(32, 32, 253);
+    width: 22%;
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+}
+.services{
+    padding-bottom: 80px;
+}
+.head {
+    position: relative;
+    margin-bottom: 60px;
+}
+.line {
+    width: 40px;
+    height: 5px;
+    background-color: #0078ff;
+    margin: 0 auto;
+}
+
+.services .cards .card i{
+    font-size: 50px;
+    padding: 30px;
+    /* border: 10px solid #0078FF; */
+    box-shadow: 0 0 0 10px #0078ff;
+    border-radius: 50%;
+    transition: .5s;
+}
+.services .cards .card:hover i{
+    background-color: #0078FF;
+    box-shadow: 0 0 0 10px #0077ff54;
+    color: white;
+}
+.statics{
+    position: relative;
+    background-image: url(/img/counters-bg.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.statics .overlay-2{
+    background-color: #1e87ffc7;
+    height: 100%;
+    width: 100%;
+}
+.statics .row{
+    padding: 150px 0px;
+}
+.statics .counter-box {
+    color: #fff;
+    text-align: center;
+    
+}
+.statics .counter-icon .ico-circle {
+    height: 60px;
+    width: 60px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 0 10px #CDE1F8;
+    display: block;
+    margin-bottom: 10px;
+}
+.portfolio {
+    padding-bottom: 80px;
+}
+.portfolio .cards .card .img-holder{
+    overflow: hidden;
+}
+.portfolio .cards .card:hover img{
+    scale: 1.2;
+}
+.portfolio .cards .card img{
+    transition: .5s;
+}
+.portfolio .icon{
+    position: absolute;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    font-size: 2rem;
+    border-radius: 50%;
+    line-height: 1.55;
+    text-align: center;
+    box-shadow: 0 0 0 3px #0078FF;
+    display: block;
+    bottom: 30px;
+    right: 10px;
+}
+.portfolio .icon i{
+    flex: end;
+    position: absolute;
+    right: 3px;
+    color: #0078FF;
+    font-weight: 300;
+}
+.portfolio p{
+    font-size: 14px;
+}
+.portfolio  span{
+    color: #0078FF;
+}
+.testmonails{
+    background-image: url(../img/overlay-bg.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+
+}
+ .overlay-3{
+    background-color: #0078ff;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.testmonails .carousel {
+    position: relative;
+    margin-top: 115px;
+}
+.testmonails .carousel-rinne img{
+    width: 150px;
+}
+.testmonails .carousel-indicators .slides{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.blog {
+    padding-bottom: 80px;
+}
+.blog .row .card-footer img{
+width: 35px;
+border-radius: 50%;
+}
+.blog .card-body .big {
+    transition: .5s;
+    color: black;
+    font-size: 22px;
+}
+.blog .card-body .small {
+    transition: .5s;
+    color: black;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.blog .card-body .big:hover{
+    color: #0078FF ;
+}
+.blog .card-body .small:hover{
+    color: #0078FF ;
+}
+.blog .card-body .category-box h5{
+    width: fit-content;
+    font-size: 17px;
+    position: relative;
+    top: -30px;
+    background-color: #0078ff;
+    padding: 3px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+}
+.blog .par{
+    float: right;
+}
+footer{
+    background-color: #0062d1;
+}
+.contact{
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+
+}
+.contact .layer{
+    width: 100%;
+    height: 100%;
+    background-color: #0078ffb8;
+    padding: 120px 0;  
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.contact .container{
+    padding: 48px;
+    background-color: white;
+}
+.contact .layer .inner{
+    padding: 0 12px;
+}
+.contact .layer .inner h2{
+    font-size: 32px;
+    position: relative;
+    margin-bottom: 40px;
+}
+.contact .layer .inner h2::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    background-color: #0078ff;
+    width: 100px;
+    bottom: -12px;
+ 
+
+}
+.contact .layer .inner input{
+    padding: 10px 15px;
+    margin-bottom: 18px;
+}
+.contact .layer .inner textarea{
+    height: 130px;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+}
+.contact .layer .inner ul{
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    
+}
+.contact .layer .inner ul li span{
+    color: #0078ff;
+    margin-right: 10px;
+  
+
+}
+.contact .layer .inner ul li{
+    margin-bottom: 10px;
+}
+.contact .layer .inner .social-link li{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+
+    border: 4px solid #0078ff;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+font-size: 19.2px;
+transition-duration:0.3s ;
+}
+.contact .layer .inner .social-link a{
+    text-decoration: none;
+}
+.contact .layer .inner .social-link li:hover{
+    border: 4px solid #298eff;
+    color: white;
+    background-color:#0078ff ;
+
+}
